@@ -45,7 +45,7 @@ This README will guide you through the setup and usage of the Langchain with Lla
 
 6. Run the following command in your terminal to run the app UI (to choose ip and port use --host IP and --port XXXX):
    ```
-   chainlit run main.py -w --host 127.0.0.1 --port 9001
+   chainlit run bot.py -w --host 127.0.0.1 --port 9001
    ```
 
 7. Ask any question about the pdfs
