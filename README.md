@@ -3,7 +3,7 @@ This README will guide you through the setup and usage of the Langchain with Lla
 
 ## Prerequisites
 
-- Python 3.10 or higher
+- Python 3.9 or higher
 - Required Python packages (you can install them using pip):
     - langchain
     - chainlit
@@ -32,3 +32,20 @@ This README will guide you through the setup and usage of the Langchain with Lla
     ```bash
     pip install -r requirements.txt
     ```
+
+4. Use your HuggingfaceHub API key (from this [URL](https://huggingface.co/settings/tokens)) in the .env file
+   ```
+   HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token
+   ```
+
+5. Put your pdf files in the data folder and run the following command in your terminal to create the embeddings and store it locally:
+   ```
+   python ingest.py
+   ```
+
+6. Run the following command in your terminal to run the app UI (to choose ip and port use --host IP and --port XXXX):
+   ```
+   chainlit run main.py -w --host 127.0.0.1 --port 9001
+   ```
+
+7. Ask any question about the pdfs
